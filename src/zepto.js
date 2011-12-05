@@ -1,4 +1,4 @@
-//     Zepto.js
+//     Zepto.js - AMD-compatible fork github.com/gordonbrander/zepto
 //     (c) 2010, 2011 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
 
@@ -468,9 +468,3 @@ var Zepto = (function() {
 
 window.Zepto = Zepto;
 '$' in window || (window.$ = Zepto);
-
-/* Register as AMD module.
-See https://github.com/madrobby/zepto/pull/342 */
-if (typeof define === 'function' && define.amd) {
-  define(function() { return Zepto; });
-}
